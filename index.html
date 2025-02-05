@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght
+    @100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font
+    -awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdY
+    TDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHU
+    SCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c451d80140.js" crossorigin="
+    anonymous"></script>
+    <title>UniãoX</title>
+</head>
+<body>
+            
+    <nav>
+        <div class="nav_left">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <ul>
+                <li><img src="images/notification.png" alt="notification"></li>
+                <li><img src="images/inbox.png" alt="inbox"></li>
+                <li><img src="images/video.png" alt="video"></li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <div class="search_box">
+                <img src="images/search.png" alt="search">
+                <input type="search" placeholder="Procurar">
+            </div>
+            <div class="nav_user_icon online_icon" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="profile">
+            </div>
+        </div>
+        <!-- todo: setting menu -->
+        <div class="setting_menu">
+            
+            <div id="dark_btn" class="dark_btn_on">
+                <span></span>
+            </div>
+
+            <div class="settings_menu_inner">
+                <div class="user_profile">
+                    <img src="images/profile-pic.png" alt="Pro We Are Pro You Now">
+                    <div>
+                        <p>João Vitor</p>
+                        <a href="./user.html">Veja Seu Perfil</a>
+                    </div>
+                </div>
+                <hr />
+                <div class="user_profile">
+                    <img src="images/feedback.png" alt="">
+                    <div>
+                        <p>Dê Seu Feedback</p>
+                        <a href="#">Ajude a Melhorar Para Um Novo Design</a>
+                    </div>
+                </div>
+                <hr />
+                <div class="setting_link">
+                    <img src="images/setting.png" class="setting_icon" alt="">
+                    <a href="#">Configuração e Privacidade <img src="images/arrow.png" alt="" width="10px"></a>
+                </div>
+                <div class="setting_link">
+                    <img src="images/help.png" class="setting_icon" alt="">
+                    <a href="#">Ajuda e Suporte <img src="images/arrow.png" alt="" width="10px"></a>
+                </div>
+                <div class="setting_link">
+                    <img src="images/display.png" class="setting_icon" alt="">
+                    <a href="#">Exibição e Acessibilidade <img src="images/arrow.png" alt="" width="10px"></a>
+                </div>
+                <div class="setting_link">
+                    <img src="images/logout.png" class="setting_icon" alt="">
+                    <a href="#">Sair<img src="images/arrow.png" alt="" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- todo: Left SIdeBar Start -->
+        <div class="left_sidebar">
+            <div class="important_link">
+                <a href="#"><img src="images/news.png" alt="news">Últimas Notícias</a>
+                <a href="#"><img src="images/friends.png" alt="Freinds">Amigos</a>
+                <a href="#"><img src="images/group.png" alt="Group">Grupo</a>
+                <a href="#"><img src="images/marketplace.png" alt="MarketpLace">Mercado</a>
+                <a href="#"><img src="images/watch.png" alt="Watch">Assistir</a>
+                <a href="#">Ver Mais</a>
+            </div>
+            <div class="shortcut_links">
+                <p>Seu Atalho</p>
+                <a href=""><img src="images/shortcut-1.png">Desenvolvedora Web</a>
+                <a href=""><img src="images/shortcut-2.png">Web Design</a>
+                <a href=""><img src="images/shortcut-3.png">Design Gráfico</a>
+                <a href=""><img src="images/shortcut-4.png">Desenvolvedor Johnny</a>
+            </div>
+        </div>
+        <!-- todo: Left SIdeBar End -->
+
+        <!-- todo: Main Content Start -->
+        <div class="main_content">
+            <div class="story_gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="Uploading Photo">
+                    <p>Postar História</p>
+                </div>
+                <div class="story  story2">
+                    <img src="images/member-1.png" alt="Uploading Photo">
+                    <p>João Vitor</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="Uploading Photo">
+                    <p>New Royale Brasil</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="Uploading Photo">
+                    <p>Otaku Origin Master</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png" alt="Uploading Photo">
+                    <p>Raizen Kurogami</p>
+                </div>
+            </div>
+            <div class="post_container">
+                <div class="user_profile">
+                    <img src="images/profile-pic.png" alt="Pro We Are Pro You Now">
+                    <div>
+                        <p>João Vitor</p>
+                        <small>Público <i class="fa fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post_input_container">
+                    <input id="input_vlaue" placeholder="What's on Your Mind"/>
+                    <button id="button_value">Publicar</button>
+                    <div class="add_post_link">
+                        <a href="#"><img src="images/live-video.png" alt="Its Video Time">Vídeo Ao Vivo</a>
+                        <a href="#"><img src="images/photo.png" alt="Its Video Time">Foto/Vídeo</a>
+                        <a href="#"><img src="images/feeling.png" alt="Its Video Time">Sentimento/Atividade</a>
+                    </div>
+                </div>
+            </div>
+            <div id="post">
+                Post
+            </div>
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+                        <img src="images/profile-pic.png" alt="Pro We Are Pro You Now">
+                        <div>
+                            <p>João Vitor</p>
+                            <span>Abril de 5 de 2005 , 7:45 H</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post_text">Inscreva-Se No Canal <span> @Killer Fc </span>No YouTube Para Assistir os Memes de Free Fire Venham Fazer Parte Desta Família
+                    <a href="#">#Killer Fc</a><a href="#">#Canal do YouTube</a>
+                </p>
+                <img src="images/feed-image-1.png" alt="Feedback" class="post_img">
+                <div class="post_row">
+                    <div class="activity_icon">
+                        <div><img src="images/like-blue.png" alt="Like Kardo">2.400</div>
+                        <div><img src="images/comments.png" alt="Like Kardo">0</div>
+                        <div><img src="images/share.png" alt="Like Kardo">1.000</div>
+                    </div>
+                    <div class="post_profile_icon">
+                        <img src="images/profile-pic.png" alt="Profile Pic"> <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+                        <img src="images/profile-pic.png" alt="Pro We Are Pro You Now">
+                        <div>
+                            <p>New Royale Brasil</p>
+                            <span>Janeiro de 1 de 2024 , 16:00 H</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post_text">Inscreva-Se No Canal  <span> @New Royale Brasil </span>No YouTube Venha Assistir Nossa História do Famoso Jogo New Royale Venham Fazer Parte Desta Família
+                    <a href="#">#New Royale Brasil</a><a href="#">#Canal do YouTube</a>
+                </p>
+                <img src="images/feed-image-2.png" alt="Feedback" class="post_img">
+                <div class="post_row">
+                    <div class="activity_icon">
+                        <div><img src="images/like-blue.png" alt="Like Kardo">100.000</div>
+                        <div><img src="images/comments.png" alt="Like Kardo">0</div>
+                        <div><img src="images/share.png" alt="Like Kardo">900.000</div>
+                    </div>
+                    <div class="post_profile_icon">
+                        <img src="images/profile-pic.png" alt="Profile Pic"> <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+                        <img src="images/profile-pic.png" alt="Pro We Are Pro You Now">
+                        <div>
+                            <p>Otaku Origin Master</p>
+                            <span>Setembro de 9 de 2024 , 11:00 H</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post_text">Inscreva-Se No Canal <span> @Otaku Origin Master </span>No YouTube Venha Assistir os Melhores Animes é Recap Venham Fazer Parte Desta Família
+                    <a href="#">#Otaku Origin Master</a><a href="#">#Canal do YouTube</a>
+                </p>
+                <img src="images/feed-image-3.png" alt="Feedback" class="post_img">
+                <div class="post_row">
+                    <div class="activity_icon">
+                        <div><img src="images/like-blue.png" alt="Like Kardo">888</div>
+                        <div><img src="images/comments.png" alt="Like Kardo">0</div>
+                        <div><img src="images/share.png" alt="Like Kardo">555</div>
+                    </div>
+                    <div class="post_profile_icon">
+                        <img src="images/profile-pic.png" alt="Profile Pic"> <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+                        <img src="images/profile-pic.png" alt="Pro We Are Pro You Now">
+                        <div>
+                            <p>Goku Black Roleplay</p>
+                            <span>Maio de 7 de 2024 , 18:00 H</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post_text">Inscreva-Se No Canal<span> @Goku Black Roleplay </span>No YouTube Venha Jogar o Melhor Servidor de SAMP Venham Fazer Parte Desta Família
+                    <a href="#">#Goku Black Roleplay</a><a href="#">#Canal do YouTube</a>
+                </p>
+                <img src="images/feed-image-4.png" alt="Feedback" class="post_img">
+                <div class="post_row">
+                    <div class="activity_icon">
+                        <div><img src="images/like-blue.png" alt="Like Kardo">500</div>
+                        <div><img src="images/comments.png" alt="Like Kardo">0</div>
+                        <div><img src="images/share.png" alt="Like Kardo">800</div>
+                    </div>
+                    <div class="post_profile_icon">
+                        <img src="images/profile-pic.png" alt="Profile Pic"> <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+                        <img src="images/profile-pic.png" alt="Pro We Are Pro You Now">
+                        <div>
+                            <p>Raizen Kurogami</p>
+                            <span>Sep 9 2022 , 12:00 Am</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post_text">Seguei Para Me Ajudar <span> @raizen_of_hikari</span>Segue Minha Conta Secundária Tropinha da UniãoX
+                    <a href="#">#Raizen_of_Hikari</a><a href="#">#Perfil No Instagram</a>
+                </p>
+                <img src="images/feed-image-5.png" alt="Feedback" class="post_img">
+                <div class="post_row">
+                    <div class="activity_icon">
+                        <div><img src="images/like.png" alt="Like Kardo">5.000</div>
+                        <div><img src="images/comments.png" alt="Like Kardo">0</div>
+                        <div><img src="images/share.png" alt="Like Kardo">1.000</div>
+                    </div>
+                    <div class="post_profile_icon">
+                        <img src="images/profile-pic.png" alt="Profile Pic"> <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="our_btn">Carregar Mais</button>
+                    <footer>
+                            <p>Copyright 2025 - João Vitor Criador</p>
+                    </footer>
+        </div>
+        <!-- todo: Main Content End -->
+
+        <!-- todo:  Right SidebarStart -->
+        <div class="right_sidebar">
+            <div class="sider_bar_title">
+                <h4>Eventos</h4>
+                <a href="#">Ver Tudo</a>
+            </div>
+            <div class="event">
+                <div class="Left_event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="Right_event">
+                        <h4>Mídias Sociais</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Parque Tecnológico Willson</p>
+                        <a href="#">Mais Informações</a>
+                </div>  
+            </div>
+            <div class="event">
+                <div class="Left_event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="Right_event">
+                        <h4>Marketing Móvel</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Cidade de Orangi Karachi</p>
+                        <a href="#">Mais Informações</a>
+                </div>  
+            </div>
+            <div class="sider_bar_title">
+                <h4>Anúncio</h4>
+                <a href="#">Fechar</a>
+            </div>
+            <img src="images/advertisement.png" alt="Advertisement" class="advirsment_side_bar">
+            <div class="sider_bar_title">
+                <h4>Conversa</h4>
+                <a href="#">Ocultar Bate-Papo</a>
+            </div>
+            <div class="online_list">
+                <div class="online_icon">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>João Vitor</p>
+                </div>
+                <div class="online_list">
+                    <div class="online_icon">
+                        <img src="images/member-2.png" alt="">
+                    </div>
+                    <p>New Royale Brasil</p>
+                </div>
+                <div class="online_list">
+                    <div class="online_icon">
+                        <img src="images/member-3.png" alt="">
+                    </div>
+                    <p>Otaku Origin Master</p>
+                </div>
+        <!-- todo: Right  SIdeBar End -->
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
